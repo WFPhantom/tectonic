@@ -5,7 +5,7 @@ mod.group = "dev.worldgen"
 mod.url = "https://modrinth.com/project/tectonic"
 mod.sources = "https://github.com/Apollounknowndev/tectonic"
 mod.description = "Terrain shaping brought to new heights, grander and more varied than ever before!"
-mod.version = "3.0.27"
+mod.version = "3.0.28"
 
 deps.fabric_loader = "0.19.3"
 loomx.loom_version = "1.17-SNAPSHOT"

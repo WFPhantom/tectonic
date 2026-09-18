@@ -6,16 +6,16 @@ import json
 
 
 MOD_ID = "tectonic"
-MOD_VERSION = "3.0.27"
+MOD_VERSION = "3.0.28"
 CHANGELOG = """
-- Fix crash issues on Neoforge 26.2.
+- Fixed crashing when opening the config presets screen.
 """
 UPLOAD_VERSIONS = [
-    #("fabric", "21.1"),
-    #("neoforge", "21.1"),
-    #("fabric", "26.1"),
-    #("neoforge", "26.1"),
-    #("fabric", "26.2"),
+    ("fabric", "21.1"),
+    ("neoforge", "21.1"),
+    ("fabric", "26.1"),
+    ("neoforge", "26.1"),
+    ("fabric", "26.2"),
     ("neoforge", "26.2"),
 ]
 

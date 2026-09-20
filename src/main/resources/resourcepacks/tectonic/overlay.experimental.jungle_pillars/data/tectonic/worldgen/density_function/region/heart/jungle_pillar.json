@@ -1,23 +1,46 @@
 {
-  "type": "minecraft:spline",
-  "spline": {
-    "coordinate": {
-      "type": "lithostitched:fast_noise",
-      "config": "tectonic:jungle_pillars_distance",
-      "xz_scale": 1,
-      "y_scale": 0
-    },
-    "points": [
-      {
-        "location": -0.75,
-        "derivative": 0,
-        "value": 1.5
+  "type": "lithostitched:mix",
+  "input": {
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": {
+        "type": "minecraft:add",
+        "argument1": {
+          "type": "lithostitched:cellular",
+          "condition": {
+            "function": "tectonic:region/heart/jungle_pillar_condition",
+            "range": [0.9, 1.1],
+            "fallback_value": 256
+          },
+          "grid_size": 64,
+          "jitter": 0.67,
+          "return_type": "distance_1",
+          "salt": 312538809
+        },
+        "argument2": {
+          "type": "minecraft:mul",
+          "argument1": -30,
+          "argument2": {
+            "type": "minecraft:add",
+            "argument1": -0.35,
+            "argument2": "tectonic:region/heart/jungle_pillar_value"
+          }
+        }
       },
-      {
-        "location": -0.5,
-        "derivative": 0,
-        "value": 0
-      }
-    ]
-  }
+      "points": [
+        {
+          "location": 4,
+          "value": 0,
+          "derivative": 0.07
+        },
+        {
+          "location": 16,
+          "value": 1,
+          "derivative": 0.07
+        }
+      ]
+    }
+  },
+  "argument1": "tectonic:region/heart/jungle_pillar_value",
+  "argument2": 0
 }

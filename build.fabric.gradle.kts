@@ -53,6 +53,7 @@ dependencies {
     modImplementation("com.terraformersmc:modmenu:${property("deps.mod_menu")}")
 
     if (sc.current.project.substringBefore("-").equals("26.1")) {
+        modImplementation("maven.modrinth:EyDzmyQr:IxBftFTK")
         modImplementation("maven.modrinth:world-preview-prime:${property("deps.world_preview_prime")}")
     }
 }

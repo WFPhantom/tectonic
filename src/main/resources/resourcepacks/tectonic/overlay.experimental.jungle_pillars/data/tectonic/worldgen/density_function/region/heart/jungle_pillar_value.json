@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:flat_cache",
+  "argument": {
+    "type": "minecraft:cache_2d",
+    "argument": {
+      "type": "minecraft:add",
+      "argument1": 0.35,
+      "argument2": {
+        "type": "minecraft:mul",
+        "argument1": 0.4,
+        "argument2": {
+          "type": "lithostitched:cellular",
+          "grid_size": 64,
+          "jitter": 0.67,
+          "return_type": "cell_value",
+          "salt": 312538809
+        }
+      }
+    }
+  }
+}
